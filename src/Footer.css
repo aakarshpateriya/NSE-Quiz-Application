@@ -1,0 +1,123 @@
+/* Footer.css */
+.footer {
+    background: linear-gradient(135deg, #1a1c20 0%, #0c0e10 100%);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-about:hover,
+.footer-links:hover,
+.footer-contact:hover {
+    transform: translateY(-5px);
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-contact h4 {
+    color: #4a90e2;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-about p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.8rem 0;
+    transition: transform 0.3s ease;
+}
+
+.footer-links ul li:hover {
+    transform: translateX(10px);
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.footer-links ul li a:hover {
+    color: #4a90e2;
+    text-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+.footer-links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #4a90e2;
+    transition: width 0.3s ease;
+}
+
+.footer-links ul li a:hover::after {
+    width: 100%;
+}
+
+.footer-contact p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    color: #808080;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom p:hover {
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
